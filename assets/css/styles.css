@@ -1,0 +1,232 @@
+/* ======||====== Main Section ======||====== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* ======||====== Main Section ======||====== */
+:root {
+  --primary-bg: #2d25a0;
+  --secondary-bg: #f1f1f1;
+  --btn-bg: #e02c6d;
+  --icon-bg: #e7e7e8;
+  --primary-text: #6c6c6c;
+  --secondary-text: #ffffff;
+}
+/* ======||====== Main Section ======||====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ======||====== Main Section ======||====== */
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+p {
+  color: var(--primary-text);
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #d31027 0%,
+    #ea384d 51%,
+    #d31027 100%
+  );
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.fas {
+  margin-right: 0.5rem;
+}
+/* ======||====== Header Section ======||====== */
+header {
+  min-height: 677px;
+  background-color: var(--primary-bg);
+  display: grid;
+  place-items: center;
+}
+/* ------||------ Nav ------||------ */
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: var(--secondary-text);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* ------||------ Hero Section ------||------ */
+#hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero__area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+.hero__title h1 {
+  font-size: 4rem;
+  color: var(--secondary-text);
+}
+.hero__banner img {
+  width: 100%;
+  height: 438px;
+  margin-top: 1rem;
+}
+/* ======||====== Main Section ======||====== */
+main {
+  margin-top: 73px;
+}
+/* ------||------ players ------||------ */
+#players {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 0 auto;
+}
+.player {
+  width: 330px;
+  min-height: 500px;
+  box-shadow: 0 0 20px 5px rgb(235, 233, 233);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.player img {
+  height: 256px;
+}
+.player__info h3 {
+  font-size: 1.55rem;
+  color: #18191f;
+  margin: 1rem 0;
+}
+.player__info p {
+  font-size: 0.9rem;
+}
+/* ------||------ Highlights ------||------ */
+#highlights {
+  width: 80%;
+  min-height: 750px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.highlights__text h2 {
+  font-size: 2.7rem;
+  color: #0a0826;
+}
+.highlights__text p {
+  font-size: 0.9rem;
+  margin: 1rem 0 3rem 0;
+  padding-right: 15%;
+}
+.highlights__photo img {
+  width: 100%;
+  height: 427px;
+}
+/* ------||------ Gallery Section ------||------ */
+#Gallery {
+  width: 100%;
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+}
+.Gallery__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.Gallery__area {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+.img-thumbnail img {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+}
+.Gallery__button {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+/* ------||------ Latest News Section ------||------ */
+#LatestNews {
+  margin: 3rem 0;
+}
+.LatestNews__title h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.LatestNews__area {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  margin: 0 auto;
+}
+.news {
+  min-height: 350px;
+  padding: 1rem;
+  box-shadow: 0 0 20px 5px rgb(235, 233, 233);
+  border-radius: 20px;
+}
+.news img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 20px 20px 0 0;
+}
+.news p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+/* ======||====== Footer Section ======||====== */
+footer {
+  text-align: center;
+}
+footer img {
+  max-height: 110px;
+}
+.social_icon i {
+  height: 30px;
+  width: 30px;
+  color: #a1a1a1;
+  background-color: var(--icon-bg);
+  border-radius: 50%;
+  padding-top: 0.3rem;
+}
+footer p {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  color: #000;
+}

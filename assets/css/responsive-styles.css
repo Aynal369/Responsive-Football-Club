@@ -1,0 +1,31 @@
+/* ======||====== media query  ======||====== */
+/* ------||------ Mobile Device ------||------ */
+@media only screen and (max-width: 688px) {
+  nav {
+    display: none;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__banner {
+    width: 80%;
+  }
+  .hero__area,
+  #players,
+  #highlights,
+  .Gallery__area,
+  .LatestNews__area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: flex-start;
+  }
+  .highlights__photo img {
+    margin-top: 1rem;
+  }
+  footer img {
+    width: 100%;
+    padding: 1rem;
+  }
+}
